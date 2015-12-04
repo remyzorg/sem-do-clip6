@@ -24,7 +24,12 @@ onload = function () {
 function session_to_panel (session) {
 
     var panel = document.createElement('div');
-    panel.className="panel panel-info";
+
+    if (session.past) {
+        panel.className="panel panel-danger";
+    } else {
+        panel.className="panel panel-success";
+    }
 
     var head = document.createElement('div');
     head.className="panel-heading";
