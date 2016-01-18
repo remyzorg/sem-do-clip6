@@ -1,9 +1,9 @@
 var sessions_data = [
     {
         "date": "3 Février 2016",
-        "hide" : false,
+        "hide" : true,
         "room": "303 36-00",
-        "past" : false,
+        "past" : true,
         "talks" : [
             {
                 "name" : "Rémy El Sibaïe",
@@ -20,11 +20,5 @@ var sessions_data = [
                 "description" : "Une super thèse trop bien ",
             }
         ]
-    },
-    {
-        "date": "example",
-        "room": "303 36-00",
-        "hide" : true,
-        "talks" : []
     }
 ]
