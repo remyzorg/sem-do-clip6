@@ -38,32 +38,55 @@ function session_to_panel (session) {
     var body = document.createElement('div');
     body.className="panel-body";
 
+    var cnt = 0;
+
     session.talks.forEach(function(talk) {
+
+        if (talk.hide) return;
+        cnt++;
 
         var talk_body = document.createElement('div');
         talk_body.className="panel panel-default talkbody";
 
-        var title = document.createElement('h4');
-        var name = document.createElement('h5');
-        var desc = document.createElement('p');
-
-        var desc_div = document.createElement('div');
-        var name_div = document.createElement('div');
         var title_div = document.createElement('div');
+        var title = document.createElement('h4');
+
+        var name_div = document.createElement('div');
+        var name = document.createElement('h5');
+
+
+        var desc = document.createElement('p');
+        desc.id = "desc" + cnt;
+        desc.className = "collapse";
+        var desc_div = document.createElement('div');
 
 
         title.textContent = talk.title + " (" + talk.duration + "min)";
-        name.textContent = talk.name;
-        desc.textContent = talk.description;
+
+        if (talk.name) {
+            title.style.fontStyle = "italic";
+            name.textContent = talk.name;
+            name.style.fontWeight = "bold";
+        }
+        if (talk.description)
+            desc.textContent = talk.description;
 
         title_div.appendChild(title);
-        name_div.appendChild(name);
-        desc_div.appendChild(desc);
 
+        name_div.appendChild(name);
 
         talk_body.appendChild(title_div)
         talk_body.appendChild(name_div)
         talk_body.appendChild(desc_div)
+
+        if (talk.description) {
+            desc_div.appendChild(desc);
+        }
+
+        talk_body.onclick = function (event) {
+            $("#" + desc.id).collapse('toggle');
+        };
+
         body.appendChild(talk_body);
 
     });
