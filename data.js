@@ -12,10 +12,10 @@ var sessions_data = [
                 "description" : "Le model checking est une technique éprouvée de vérification statique pouvant s'appliquer aux programmes concurrents. Elle consiste à parcourir l'ensemble des exécutions possibles du programme et de vérifier des propriétés logiques correspondant à sa spécification formelle. L'exhaustivité induite par le parcours de cet ensemble entraîne un énorme besoin mémoire. Pour parer à ce problème, une possibilité est de ne parcourir qu'une petite partie de l'ensemble de ces exécutions de façon aléatoire. Dans cet exposé, nous présenterons deux méthodes répondant à ce dernier problème."
             },
             {
-                "name" : "Nawal Benabbou",
-                "duration" : "20",
-                "title" : "Recherche de solutions potentiellement optimales en décision multicritère, décision multi-agents et décision dans l'incertain",
-                "description" : "Dans la littérature, différents modèles ont été proposés pour représenter de manière efficace les préférences d’un agent dans des situations de décision multicritère, multi-agents ou dans l'incertain. Il s'agit d'outils formels utilisés dans les systèmes d'aide à la décision, comme par exemple les systèmes de recommandations que l'on trouve sur le web pour l'achat d'un bien (appartement, véhicule automobile, produit hi-tech). La détermination des meilleures solutions est généralement un problème de décision difficile du fait de la multiplicité des alternatives à comparer et de la coexistence de plusieurs points de vue très souvent conflictuels à considérer simultanément durant l'analyse des préférences. Dès lors que les solutions sont multi-valuées, la notion d'optimalité ne va plus de soi, ce qui a conduit les chercheurs en aide à la décision à proposer différents modèles paramètriques permettant de représenter une préférence globale en attribuant à chaque solution une valeur agrégée de ses différentes évaluations. Bien que ces modèles décisionnels permettent de se ramener au cas simple de solutions mono-valuées, ils ne donnent pas automatiquement les moyens de déterminer efficacement les solutions optimales sur un domaine combinatoire du fait de leur caractère complexe (agrégation non linéaire). Pour de nombreux modèles décisionnels, des algorithmes ont été proposés pour la détermination des solutions optimales sur domaine combinatoire. Cependant, pour pouvoir utiliser ces algorithmes, il convient de déterminer au préalable l'instance des paramètres du modèle permettant de rendre compte des préférences globales du décideur. Une méthode assez classique consiste alors à générer itérativement une instance des paramètres ainsi qu'une solution optimale correspondante, jusqu'à ce que cette dernière convienne au décideur. L'approche classique en élicitation des préférences vise à déterminer précisément le modèle de préférences du décideur sur tout l'espace multi-attribut. D'autres méthodes proposées dans la littérature considèrent en entrée une base de données contenant des informations sur les préférences du décideur, et s'intéressent à la détermination de l'instance des paramètres qui permet d'expliquer au mieux les préférences observées. L'élicitation des préférences avec information limitée est reconnue comme étant une tâche cruciale dans de nombreux domaines d'application. Dans cette thèse, on s'intéresse à un nouvelle approche, combinant élicitation et résolution, permettant de réduire l'imprécision sur les paramètres du modèle durant la recherche, afin de focaliser l'exploration sur une solution nécessairement optimale (ou presque) pour le décideur. Lorsque les paramètres sont imprécisément connus, on peut s'intéresser à la notion d'optimalité potentielle, une solution étant potentiellement optimale si et seulement s'il existe une instance des paramètres la rendant optimale. Finalement, cette thèse s'intéresse  à la détermination de l'ensemble des solutions potentiellement optimales au sens de modèles décisionnels complexes dans des problèmes d'optimisation combinatoire multi-objectif."
+                "name" : "Youen Lesparre",
+                "duration" : "10",
+                "title" : "Mapping à l'aide du modèle Dataflow",
+                "description" : "Les modèles dataflow permettent de modéliser des applications de flux de données et de prédire leurs comportements. Cette présentation propose une modélisation du problème de mapping à partir d'un dataflow sur une architecture à mémoire distribuée avec comme objectif une minimisation de la mémoire consommée."
             },
             {
                 "name" : "Benjamin Baron",
@@ -40,21 +40,16 @@ var sessions_data = [
                 "description" : "A link stream is a sequence of quadruplets (b,e,u,v) meaning that a link exists between u and v from time b to time e. Link streams model many real-world situations like contacts between individuals, connections between devices, and others. Much work is currently devoted to the generalization of classical graph and network concepts to link streams. We explore here the notion of dense sub-streams of link streams, capturing specific groups of nodes both structurally and temporally densely connected during specific periods of time. We propose a method to find such sub-streams using graph community detection algorithms, and an assessment of obtained sub-streams. We apply them to several real-world contact traces (captured by sensors) and demonstrate the relevance of obtained structures."
             },
             {
-                "name" : "Youen Lesparre",
+                "name" : "Siao-Lieu Phouratsamay",
                 "duration" : "10",
-                "title" : "Mapping à l'aide du modèle Dataflow",
-                "description" : "Les modèles dataflow permettent de modéliser des applications de flux de données et de prédire leurs comportements. Cette présentation propose une modélisation du problème de mapping à partir d'un dataflow sur une architecture à mémoire distribuée avec comme objectif une minimisation de la mémoire consommée."
-            },
+                "hide" : false,
+                "description" : "Les problèmes de lot-sizing à deux niveaux avec une capacité de stockage limitée apparaît dans une chaîne logistique à deux acteurs: un fournisseur et un distributeur. Le distributeur doit satisfaire une demande pour un unique produit sur un horizon de temps discret de périodes. Afin de satisfaire cette demande, il détermine un plan d'approvisionnement auprès du fournisseur, i.e. il détermine à quelle période produire et en quelle quantité produire. Le fournisseur détermine de son côté un plan de production dans le but de satisfaire le plan d'approvisionnement du distributeur. Le but est alors de satisfaire cette demande à moindre coût. Des résultats de complexité ont été obtenus en distinguant les cas suivants: le stockage est limité pour le fournisseur, le distributeur ou les deux acteurs."
+            }
             {
                 "name" : "Ana-Maria Vintescu",
                 "duration" : "10",
                 "hide" : true,
             },
-            {
-                "name" : "Amr Abdelfattah",
-                "duration" : "20",
-                "hide" : true,
-            }
 
         ]
     },
